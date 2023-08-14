@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b9b3a9;
+  color: #111;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.topic {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  color: #555;
+  z-index: 2;
+  box-sizing: border-box;
+  display: inline-block; /* Display topic boxes inline */
+}
+
+.sent {
+  position: relative;
+  display: inline-block; /* Display sentence boxes inline */
+  margin: 0 20px;
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  white-space: nowrap;
+  background-color: #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Optional: Add hover styles to make the flowchart interactive */
+
+.topic:hover {
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+}
+
+.sent:hover {
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+}
